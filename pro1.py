@@ -18,4 +18,6 @@ daily_sales=np.sum(Sales_data,axis=1)
 print("daily sales:",daily_sales)
 std_dev=np.std(Sales_data)
 print("sales variability:",std_dev)
+high_sales=Sales_data(Sales_data>300)
+print("high sales values:",high_sales)
 
