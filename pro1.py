@@ -6,4 +6,6 @@ Sales_data=np.array([
     [270,180,350],
     [300,200,400]])
 print(Sales_data)
+Total_sales=np.sum(Sales_data)
+print("Total Sales:",Total_sales)
 
