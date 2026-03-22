@@ -12,4 +12,6 @@ avg_sales=np.mean(Sales_data)
 print("Average Sales:",avg_sales)
 product_sales=np.sum(Sales_data,axis=0)
 print("Sales per product:",product_sales)
+best_product=np.argmax(product_sales)
+print("best product index:",best_product)
 
