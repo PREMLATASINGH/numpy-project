@@ -10,4 +10,6 @@ Total_sales=np.sum(Sales_data)
 print("Total Sales:",Total_sales)
 avg_sales=np.mean(Sales_data)
 print("Average Sales:",avg_sales)
+product_sales=np.sum(Sales_data,axis=0)
+print("Sales per product:",product_sales)
 
