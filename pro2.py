@@ -29,5 +29,4 @@ plt.ylabel("Revenue")
 plt.show()
 plt.hist(df)
 plt.show()
-plt.scatter(df)
-plt.show()
+
