@@ -10,3 +10,5 @@ df=pd.DataFrame(data)
 print(df)
 df["Revenue"]=df["quantity"]*df["price"]
 print(df)
+total_revenue=np.sum(df["Revenue"])
+print("total revenue:",total_revenue)
