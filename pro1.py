@@ -16,4 +16,6 @@ best_product=np.argmax(product_sales)
 print("best product index:",best_product)
 daily_sales=np.sum(Sales_data,axis=1)
 print("daily sales:",daily_sales)
+std_dev=np.std(Sales_data)
+print("sales variability:",std_dev)
 
