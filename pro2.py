@@ -8,3 +8,5 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
+df["Revenue"]=df["quantity"]*df["price"]
+print(df)
