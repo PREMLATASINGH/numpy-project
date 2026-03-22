@@ -8,4 +8,6 @@ Sales_data=np.array([
 print(Sales_data)
 Total_sales=np.sum(Sales_data)
 print("Total Sales:",Total_sales)
+avg_sales=np.mean(Sales_data)
+print("Average Sales:",avg_sales)
 
