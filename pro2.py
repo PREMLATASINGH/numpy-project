@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 data={
     "date":["2026-01-01","2026-01-02","2026-01-03","2026-01-04","2026-01-05"]
    , "product":["A","B","A","C","B"],
@@ -20,3 +21,8 @@ daily_revenue=df.groupby("date")["Revenue"].sum()
 print(daily_revenue)
 avg_order=np.mean(df["Revenue"])
 print("average order value:",avg_order)
+daily_revenue.plot(kind="line")
+plt.title("daily revenue trend")
+plt.xlabel("date")
+plt.ylabel("Revenue")
+plt.show()
