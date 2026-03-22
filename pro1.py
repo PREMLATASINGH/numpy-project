@@ -1,0 +1,9 @@
+import numpy as np
+Sales_data=np.array([
+    [200,150,300],
+    [220,130,280],
+    [250,160,310],
+    [270,180,350],
+    [300,200,400]])
+print(Sales_data)
+
