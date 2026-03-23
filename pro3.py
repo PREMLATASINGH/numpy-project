@@ -11,4 +11,5 @@ print(df)
 plt.hist(df)
 plt.show()
 print(type(df))
-print(df.add())
+
+
