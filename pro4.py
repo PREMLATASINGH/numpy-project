@@ -21,3 +21,5 @@ top_customer=df.groupby("customer")["revenue"].sum().idxmax()
 print("top customer:",top_customer)
 high_order=df[df["revenue"]>1000]
 print(high_order)
+purchase_count=df["customer"].value_counts()
+print(purchase_count)
