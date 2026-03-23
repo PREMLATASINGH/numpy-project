@@ -19,3 +19,5 @@ product_revenue=df.groupby("product")["revenue"].sum()
 print(product_revenue)
 top_customer=df.groupby("customer")["revenue"].sum().idxmax()
 print("top customer:",top_customer)
+high_order=df[df["revenue"]>1000]
+print(high_order)
