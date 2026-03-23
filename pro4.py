@@ -10,3 +10,4 @@ df=pd.DataFrame(data)
 print(df)
 print(df.isnull().sum())
 df["revenue"]=df["quantity"]*df["price"]
+print(df)
