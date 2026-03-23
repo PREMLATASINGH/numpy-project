@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 data={
     "customer":["A","B","C","A","B","D"],
     "product":["laptop","phone","tablet","phone","laptop","taplet"],
@@ -23,3 +24,6 @@ high_order=df[df["revenue"]>1000]
 print(high_order)
 purchase_count=df["customer"].value_counts()
 print(purchase_count)
+product_revenue.plot(kind="bar")
+plt.title("revenue by product")
+plt.show()
