@@ -11,6 +11,7 @@ print(df)
 plt.hist(df)
 plt.show()
 print(type(df))
+print(df.isnull().sum())
 df["Revenue"]=df["quantity"]*df["price"]
 total_revenue=np.sum(df["Revenue"])
 print("total revenue:",total_revenue)
