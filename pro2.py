@@ -12,6 +12,7 @@ print(df)
 df["Revenue"]=df["quantity"]*df["price"]
 print(df)
 print(type(df))
+print(df.isnull().sum())
 total_revenue=np.sum(df["Revenue"])
 print("total revenue:",total_revenue)
 product_revenue=df.groupby("product")["Revenue"].sum()
@@ -29,4 +30,5 @@ plt.ylabel("Revenue")
 plt.show()
 plt.hist(df)
 plt.show()
+
 
