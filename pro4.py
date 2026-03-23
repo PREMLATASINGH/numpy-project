@@ -13,3 +13,5 @@ df["revenue"]=df["quantity"]*df["price"]
 print(df)
 total_revenue=np.sum(df["revenue"])
 print("total revenue:",total_revenue)
+avg_order=np.mean(df["revenue"])
+print("average order value:",avg_order)
