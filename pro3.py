@@ -18,5 +18,6 @@ print("total revenue:",total_revenue)
 daily_revenue=df.groupby("date")["Revenue"].sum()
 print(daily_revenue)
 print(df.describe())
+print(df.info())
 
 
