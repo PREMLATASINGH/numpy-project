@@ -11,3 +11,5 @@ print(df)
 print(df.isnull().sum())
 df["revenue"]=df["quantity"]*df["price"]
 print(df)
+total_revenue=np.sum(df["revenue"])
+print("total revenue:",total_revenue)
